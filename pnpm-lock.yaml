@@ -1,0 +1,96 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@girs/gjs':
+        specifier: 4.0.0-beta.25
+        version: 4.0.0-beta.25
+      '@girs/soup-3.0':
+        specifier: 3.6.5-4.0.0-beta.25
+        version: 3.6.5-4.0.0-beta.25
+    devDependencies:
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+
+packages:
+
+  '@girs/cairo-1.0@1.0.0-4.0.0-beta.25':
+    resolution: {integrity: sha512-gg892WthDi8uwfyPYMqGQ0P2PEPO0R0L88Vr/wiiKzDtKAoiW0G9Mu81edTc2yK0Q1CFf7toE7HWPOfkNilztA==}
+
+  '@girs/gio-2.0@2.84.2-4.0.0-beta.25':
+    resolution: {integrity: sha512-2iJXJbHX4q2/ZHFyAH/oStPnwlLfyxNPwDX3ouzWGiwTnO4FOPOzW+9CltWD/IOF2I3luLUW5Bk3Y+WbBR8RSA==}
+
+  '@girs/gjs@4.0.0-beta.25':
+    resolution: {integrity: sha512-7m3copHTTWcc6XyKsCY0xwzZKDer8kzfnfVAptYisXat25GuWT6hsoZdbXJ26sqlnk0w/Tpxmeqd18aYLYRdGA==}
+
+  '@girs/glib-2.0@2.84.2-4.0.0-beta.25':
+    resolution: {integrity: sha512-4G8Ai2jh8bqiHa5Dd4MqU3m1JNyMxa0TudMaZrL67Z1/QOGFPg/75luVtIvCD+j4fwaMlfLHaBGJJ+1dFklCpw==}
+
+  '@girs/gmodule-2.0@2.0.0-4.0.0-beta.25':
+    resolution: {integrity: sha512-RiZ1LhVN2EbPnqb7Ed4DVhPF5ZDfvKrEaHfxBiAsBU7knf8FUKKOGwOKvH2tQ36JYnvTNACQkm+xcPSIYIkwsQ==}
+
+  '@girs/gobject-2.0@2.84.2-4.0.0-beta.25':
+    resolution: {integrity: sha512-5CHEq2Rw9hCHYmxhWQQLR0eJlqWhO9MpbJkr1rHrPqM00i9t9n701de1daFXubi9DUwsqw73F+36A2UDkTC5sw==}
+
+  '@girs/soup-3.0@3.6.5-4.0.0-beta.25':
+    resolution: {integrity: sha512-TYhj1fjhtau3n5dngmzVRhcQM9WvdCyJxzwPa7qpmk+K2yKy6eY6f5PJNmFX5woxWXd1tgqbmMtxbZuaEFNNiA==}
+
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  '@girs/cairo-1.0@1.0.0-4.0.0-beta.25':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.25
+      '@girs/glib-2.0': 2.84.2-4.0.0-beta.25
+      '@girs/gobject-2.0': 2.84.2-4.0.0-beta.25
+
+  '@girs/gio-2.0@2.84.2-4.0.0-beta.25':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.25
+      '@girs/glib-2.0': 2.84.2-4.0.0-beta.25
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.25
+      '@girs/gobject-2.0': 2.84.2-4.0.0-beta.25
+
+  '@girs/gjs@4.0.0-beta.25':
+    dependencies:
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.25
+      '@girs/gio-2.0': 2.84.2-4.0.0-beta.25
+      '@girs/glib-2.0': 2.84.2-4.0.0-beta.25
+      '@girs/gobject-2.0': 2.84.2-4.0.0-beta.25
+
+  '@girs/glib-2.0@2.84.2-4.0.0-beta.25':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.25
+      '@girs/gobject-2.0': 2.84.2-4.0.0-beta.25
+
+  '@girs/gmodule-2.0@2.0.0-4.0.0-beta.25':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.25
+      '@girs/glib-2.0': 2.84.2-4.0.0-beta.25
+      '@girs/gobject-2.0': 2.84.2-4.0.0-beta.25
+
+  '@girs/gobject-2.0@2.84.2-4.0.0-beta.25':
+    dependencies:
+      '@girs/gjs': 4.0.0-beta.25
+      '@girs/glib-2.0': 2.84.2-4.0.0-beta.25
+
+  '@girs/soup-3.0@3.6.5-4.0.0-beta.25':
+    dependencies:
+      '@girs/gio-2.0': 2.84.2-4.0.0-beta.25
+      '@girs/gjs': 4.0.0-beta.25
+      '@girs/glib-2.0': 2.84.2-4.0.0-beta.25
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.25
+      '@girs/gobject-2.0': 2.84.2-4.0.0-beta.25
+
+  typescript@5.8.3: {}
